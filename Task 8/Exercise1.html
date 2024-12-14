@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #1</title>
+
+    <style>
+
+        .grid-container{
+
+            height: 90vh;
+            display: grid;
+
+            grid-template-columns: repeat(3 , 1fr);
+            grid-template-rows: 14.29% auto 28.58%;
+
+            grid-template-areas: "Header Header Header" 
+                                 "Aside Aside Section"
+                                 "Footer Footer Footer"
+            ;
+
+            gap: 10px;
+        }
+
+        .header{
+
+            grid-area: Header;
+            background-color: black;
+        }
+
+        .aside{
+
+            grid-area: Aside;
+            background-color: orange;
+        }
+
+        .section{
+
+            grid-area: Section;
+            background-color: green;
+        }
+
+        .footer{
+
+            grid-area: Footer;
+            background-color: blue;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <section class="grid-container">
+
+    <div class="header"></div>
+
+    <div class="aside"></div>
+
+    <div class="section"></div>
+
+    <div class="footer"></div>
+
+</section>
+    
+</body>
+</html>
